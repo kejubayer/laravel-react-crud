@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('add-student',[\App\Http\Controllers\Api\StudentController::class,'store']);
 Route::get('students',[\App\Http\Controllers\Api\StudentController::class,'index']);
+Route::get('edit-student/{id}',[\App\Http\Controllers\Api\StudentController::class,'edit']);
+Route::put('edit-student/{id}',[\App\Http\Controllers\Api\StudentController::class,'update']);
+
 
 
 
