@@ -18,6 +18,7 @@ Route::post('add-student',[\App\Http\Controllers\Api\StudentController::class,'s
 Route::get('students',[\App\Http\Controllers\Api\StudentController::class,'index']);
 Route::get('edit-student/{id}',[\App\Http\Controllers\Api\StudentController::class,'edit']);
 Route::put('edit-student/{id}',[\App\Http\Controllers\Api\StudentController::class,'update']);
+Route::delete('delete-student/{id}',[\App\Http\Controllers\Api\StudentController::class,'destroy']);
 
 
 
